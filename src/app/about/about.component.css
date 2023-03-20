@@ -1,0 +1,42 @@
+html, body {background-color: #ccffba;
+    /* min-height: 100%; */
+    min-height: 100vh;
+    /* height: 100%; */
+    /* height: 2900px; */
+}
+
+h1 {
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+
+.topic {
+    padding-top: 200px;
+    padding-left: 10%;
+    
+}
+
+.intro {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.works {
+    display: inline-block;
+    padding: 3%;
+}
+
+.intro-tech {
+    
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 200px;
+}
