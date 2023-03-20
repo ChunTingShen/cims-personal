@@ -1,5 +1,10 @@
 section {
     background-color: aliceblue;
     padding: 20px;
+    /* float: right; */
+    /* margin-right: 20px; */
+}
 
+button {
+    margin-left: 50px;
 }

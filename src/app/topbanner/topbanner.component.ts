@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-topbanner',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class TopbannerComponent {
 
+  constructor(private router: Router){}
+
+  toHome() {
+    console.log("to Home page")
+    this.router.navigate(['/'])
+    
+  }
+
+
+  toContact() {
+    
+    console.log("to Contact page")
+    this.router.navigate(['/contact'])
+    
+  }
 }
