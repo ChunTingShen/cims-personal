@@ -1,0 +1,26 @@
+html, body {background-color: #b3fd99;
+    min-height: 100%;
+    height: 2900px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.topic {
+    padding-top: 200px;
+    padding-left: 10%;
+}
+
+.intro {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.works {
+    display: inline-block;
+    padding: 5%;
+}
