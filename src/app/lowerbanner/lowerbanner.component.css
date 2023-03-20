@@ -2,7 +2,7 @@ section {
     background-color: aliceblue;
     padding: 20px;
 
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 button {
@@ -10,6 +10,6 @@ button {
 }
 
 .copyright {
-    padding-left: 40%;
     font-weight: 100;
+    text-align: center;
 }
