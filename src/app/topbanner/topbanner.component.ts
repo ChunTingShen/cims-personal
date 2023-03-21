@@ -11,15 +11,21 @@ export class TopbannerComponent {
   constructor(private router: Router){}
 
   toHome() {
-    console.log("to Home page")
+    // console.log("to Home page")
     this.router.navigate(['/'])
     
   }
 
 
+  toAbout() {
+    // console.log("to Home page")
+    this.router.navigate(['/'], {fragment: 'about'})
+    
+  }
+
   toContact() {
     
-    console.log("to Contact page")
+    // console.log("to Contact page")
     this.router.navigate(['/contact'])
     
   }

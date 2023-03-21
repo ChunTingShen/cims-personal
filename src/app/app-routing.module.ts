@@ -7,11 +7,11 @@ import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/about', pathMatch: 'full'
+    path: '', component: AboutComponent
   },
-  {
-    path: 'about', component: AboutComponent
-  },
+  // {
+  //   path: 'about', component: AboutComponent
+  // },
   {
     path: 'contact', component: ContactComponent
   },
@@ -19,7 +19,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {anchorScrolling: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
