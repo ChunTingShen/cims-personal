@@ -1,9 +1,11 @@
-html, body {background-color: #ccffba;
+html, body {
+    background-color: #ccffba;
     /* min-height: 100%; */
     min-height: 100vh;
     /* height: 100%; */
     /* height: 2900px; */
 }
+
 
 h1 {
     font-size: 40px;
@@ -23,21 +25,51 @@ span {
 td {
     width: 350px;
 }
+
+.main-background {
+    background-color: #ccffba;
+
+
+}
 .topic {
-    padding-top: 200px;
+    padding-top: 150px;
     padding-left: 10%;
     
 }
 
+.exp-img{
+    max-width: 100px;
+    max-height: 80px;
+    position: absolute;
+    right: 15%;
+}
+
+
 .intro {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    box-shadow: 5px 5px 15px gray;
+    margin-right: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: white;
+
 }
 
 .intro-end {
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+
+    box-shadow: 5px 5px 15px gray;
+    margin-right: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
+    background-color: white;
+    
 }
 
 
@@ -57,7 +89,18 @@ td {
 }
 
 .intro-tech {
-    padding-top: 80px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    box-shadow: 5px 5px 15px gray;
+    margin-right: 5%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: white;
+}
+
+.box-shadow {
+    box-shadow: 5px 5px 5px lightblue;
 }

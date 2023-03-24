@@ -12,15 +12,27 @@ export class LowerbannerComponent {
   toHome() {
     // console.log("to Home page")
     this.router.navigate(['/'])
-    
+    document.getElementById('name')?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+
   }
+
 
 
   toAbout() {
-    // console.log("to About page")
-    this.router.navigate(['/'], {fragment: 'about'})
     
+    this.router.navigate(['/']).then(()=> {
+      try{        
+        setTimeout(()=>{
+          document.getElementById('about')?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        }, 200)
+
+      }
+      catch(error){
+        console.log(error);
+      }
+    })
   }
+
   toContact() {
     
     // console.log("to Contact page")

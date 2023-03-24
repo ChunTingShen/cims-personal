@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -5,10 +6,14 @@ import { Router } from '@angular/router';
   selector: 'app-topbanner',
   templateUrl: './topbanner.component.html',
   styleUrls: ['./topbanner.component.css']
+  
 })
 export class TopbannerComponent {
 
-  constructor(private router: Router){}
+  constructor(
+    private router: Router,
+    private _vps: ViewportScroller
+    ){}
 
   toHome() {
     // console.log("to Home page")
@@ -18,8 +23,21 @@ export class TopbannerComponent {
 
 
   toAbout() {
-    // console.log("to Home page")
-    this.router.navigate(['/'], {fragment: 'about'})
+    
+    this.router.navigate(['/']).then(()=> {
+      try{        
+        setTimeout(()=>{
+          document.getElementById('about')?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+          
+        }, 200)
+
+      }
+      catch(error){
+        console.log(error);
+      }
+
+    })
+
     
   }
 
